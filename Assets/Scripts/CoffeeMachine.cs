@@ -4,16 +4,32 @@ using UnityEngine;
 
 public class CoffeeMachine : MonoBehaviour
 {
-    [SerializeField] private MeshRenderer _mesh;
-    // Start is called before the first frame update
-    void Start()
+    private bool _canPourCoffee = true;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private GameObject _coffeePrefab;
+    [SerializeField] private GameObject _coffeeSpawnPos;
+    private void OnTriggerEnter(Collider other)
     {
-        _mesh.material.color = Color.red;
+        if(other.tag == "Cup" && _canPourCoffee == true)
+        {
+            StartCoroutine(PourCoffeeRoutine());
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator PourCoffeeRoutine()
     {
-        
+        int coffeeSpawned = 0;
+        _canPourCoffee = false;
+        yield return new WaitForSeconds(1);
+        _audioSource.Play();
+
+        while(coffeeSpawned != 5)
+        {
+            coffeeSpawned++;
+            Instantiate(_coffeePrefab, _coffeeSpawnPos.transform.position, Quaternion.identity);
+            yield return new WaitForSeconds(1.5f);
+        }
+        yield return new WaitForSeconds(2.5f);
+        _canPourCoffee = true;
     }
 }
