@@ -31,6 +31,7 @@ public class CoffeeBehavior : MonoBehaviour
             if (source != null)
             {
                 source.Play();
+                TimelineManager.Instance.ObjectiveComplete(0, 14.35f, true);
                 Destroy(this.gameObject);
             }
         }
