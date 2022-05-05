@@ -21,6 +21,7 @@ public class TimelineManager : MonoBehaviour
     [SerializeField] private PlayableDirector director;
     [SerializeField] private PlayableAsset[] _sequences;
     [SerializeField] private int _index;
+    [SerializeField] private int _objectiveIndex;
     [SerializeField] private float _skipTime;
     [SerializeField] private bool _completedObjective;
     [SerializeField] private bool _startNextSequence;
@@ -37,25 +38,22 @@ public class TimelineManager : MonoBehaviour
             director.time = _skipTime;
         else
         {
-            if(_index != _sequences.Length && _startNextSequence == true)
+            _completedObjective = false;
+            if (_startNextSequence == true)
             {
                 _index++;
-                director.time = 0;
                 director.playableAsset = _sequences[_index];
-                director.Play();
+                director.time = 0;
             }
-            else if(_index == _sequences.Length)
-            {
-                Debug.Log("Completed Game");
-            }
-            _completedObjective = false;
+            director.Play();
         }
     }
 
     public void ObjectiveComplete(int objectiveIndex, float skipTime, bool startNextSequence)
     {
-        if(_index == objectiveIndex)
+        if(_objectiveIndex == objectiveIndex)
         {
+            _objectiveIndex++;
             _startNextSequence = startNextSequence;
             _completedObjective = true;
             _skipTime = skipTime;
