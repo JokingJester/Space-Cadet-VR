@@ -20,15 +20,10 @@ public class Button : MonoBehaviour
         this.enabled = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void PlayFlashAnimation()
     {
         _canPressButton = true;
+        _anim.ResetTrigger("Flip");
         _anim.SetTrigger("Flash");
     }
 
@@ -36,10 +31,11 @@ public class Button : MonoBehaviour
     {
         if(_canPressButton == true)
         {
+            _canPressButton = false;
             buttonPressed = true;
+            _anim.ResetTrigger("Flash");
             _anim.SetTrigger("Flip");
             _audioSource.Play();
-            _canPressButton = false;
         }
     }
 }
