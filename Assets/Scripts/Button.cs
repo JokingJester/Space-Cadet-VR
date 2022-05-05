@@ -6,7 +6,9 @@ public class Button : MonoBehaviour
 {
     [SerializeField] private Animator _anim;
     [SerializeField] private AudioSource _audioSource;
+
     public bool buttonPressed;
+    public bool underButtonCover;
     private bool _canPressButton;
 
     private void OnEnable()
@@ -29,12 +31,21 @@ public class Button : MonoBehaviour
 
     public void FlipSwitch()
     {
-        if(_canPressButton == true)
+        if (_canPressButton == true && underButtonCover == false)
         {
             _canPressButton = false;
             buttonPressed = true;
             _anim.ResetTrigger("Flash");
             _anim.SetTrigger("Flip");
+            _audioSource.Play();
+        }
+        
+        if(_canPressButton == true && underButtonCover == true)
+        {
+            _canPressButton = false;
+            buttonPressed = true;
+            _anim.ResetTrigger("Flash");
+            _anim.SetTrigger("Flip Under Cover");
             _audioSource.Play();
         }
     }
