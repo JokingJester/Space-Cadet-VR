@@ -27,19 +27,18 @@ public class CoffeeBehavior : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            AudioSource source = other.GetComponent<AudioSource>();
-            if (source != null)
+            Player player = other.GetComponent<Player>();
+            if (player != null)
             {
-                source.Play();
-                TimelineManager.Instance.ObjectiveComplete(0, 14.35f, true);
+                player.DrinkCoffee();
                 Destroy(this.gameObject);
             }
         }
     }
-
     private IEnumerator StopApplyingForceRoutine()
     {
         yield return new WaitForSeconds(10f);
         _applyForce = false;
     }
+
 }

@@ -11,6 +11,11 @@ public class Button : MonoBehaviour
     public bool underButtonCover;
     private bool _canPressButton;
 
+    private void Awake()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
+
     private void OnEnable()
     {
         PlayFlashAnimation();
@@ -18,7 +23,6 @@ public class Button : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _audioSource = GetComponent<AudioSource>();
         this.enabled = false;
     }
 

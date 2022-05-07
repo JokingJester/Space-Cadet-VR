@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CheckButtonsArePressed : MonoBehaviour
+public class CheckButtonsArePressed : Objective
 {
     [SerializeField] private List<Button> _buttons;
-    [SerializeField] private int objectiveID;
-    [SerializeField] private int timeSkip;
-    [SerializeField] private bool _startNextSequence;
+    private bool _canCheckIFButtonsArePressed;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +16,10 @@ public class CheckButtonsArePressed : MonoBehaviour
     void Update()
     {
 
-        if (PressedAllButtons() == true)
+        if (PressedAllButtons() == true && _canCheckIFButtonsArePressed == true)
         {
-            TimelineManager.Instance.ObjectiveComplete(objectiveID, timeSkip, _startNextSequence);
+            _canCheckIFButtonsArePressed = false;
+            ObjectiveComplete();
         }
     }
 
@@ -34,5 +33,10 @@ public class CheckButtonsArePressed : MonoBehaviour
             }
         }
         return true;
+    }
+
+    public override void StartObjective()
+    {
+        _canCheckIFButtonsArePressed = true;
     }
 }

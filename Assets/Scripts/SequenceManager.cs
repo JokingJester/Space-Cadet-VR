@@ -15,20 +15,46 @@ public class SequenceManager : MonoBehaviour
         }
     }
 
+    public int _index;
+    public int _objectiveIndex;
+    public Sequence[] _allSequences;
+
     private void Awake()
     {
         _instance = this;
     }
 
+
+    public void ObjectiveComplete()
+    {
+        _objectiveIndex++;
+        if (_allSequences[_index].objectives.Length == _objectiveIndex)
+        {
+            if(_allSequences.Length != _index + 1)
+            {
+                _objectiveIndex = 0;
+                _index++;
+                StartObjective();
+            }
+            else
+            {
+                Debug.Log("END");
+            }
+        }
+        else
+        {
+            StartObjective();
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartObjective();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void StartObjective()
     {
-        
+        _allSequences[_index].objectives[_objectiveIndex].StartObjective();
     }
 }
