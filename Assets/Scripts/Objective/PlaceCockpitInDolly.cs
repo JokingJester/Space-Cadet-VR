@@ -11,6 +11,7 @@ public class PlaceCockpitInDolly : Objective
     {
         this.gameObject.SetActive(true);
         _cockpit.transform.parent = _dollyCart.transform;
+        _cockpit.transform.localPosition = Vector3.zero;
         ObjectiveComplete();
     }
 }

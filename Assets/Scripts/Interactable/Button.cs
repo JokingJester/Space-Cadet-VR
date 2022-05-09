@@ -53,4 +53,14 @@ public class Button : MonoBehaviour
             _audioSource.Play();
         }
     }
+
+    public void UndoButton()
+    {
+        _canPressButton = true;
+        buttonPressed = false;
+        _anim.ResetTrigger("Flip Under Cover");
+        _anim.ResetTrigger("Flip");
+        _anim.ResetTrigger("Flash");
+        PlayFlashAnimation();
+    }
 }
