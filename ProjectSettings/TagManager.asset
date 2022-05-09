@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cup
+  - Power Core
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Post Processing
   - Water
   - UI
   - 

@@ -33,4 +33,10 @@ public class AudioManager : MonoBehaviour
     {
         sfxAudioSource.PlayOneShot(audioClip);
     }
+
+    public void ChangeAmbientSoundClip(AudioClip audioClip)
+    {
+        sfxAudioSource.clip = audioClip;
+        sfxAudioSource.Play();
+    }
 }

@@ -4,12 +4,54 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public bool drankCoffee;
     [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private GameObject _blackOverlay;
+    [SerializeField] private GameObject _xrOrigin;
+    [SerializeField] private GameObject _chair;
+    public bool drankCoffee;
+    private bool _inRegularPos = true;
+    public bool canTeleport;
 
     public void DrinkCoffee()
     {
         drankCoffee = true;
         _audioSource.Play();
+    }
+
+    public void ToggleTeleport()
+    {
+        if(canTeleport == true)
+        {
+            _blackOverlay.SetActive(true);
+            StartCoroutine(TeleportRoutine());
+        }
+    }
+
+    private IEnumerator TeleportRoutine()
+    {
+        canTeleport = false;
+        yield return new WaitForSeconds(2.8f);
+        _inRegularPos = !_inRegularPos;
+        if(_inRegularPos == false)
+        {
+            _xrOrigin.transform.localEulerAngles = new Vector3(0, 185.51f, 0);
+            _xrOrigin.transform.localPosition = new Vector3(0, 0, -0.37f);
+            _chair.transform.localEulerAngles = new Vector3(0, -180, 0);
+            _chair.transform.localPosition = new Vector3(0, 0, 0.13f);
+        }
+        else
+        {
+            _xrOrigin.transform.localEulerAngles = Vector3.zero;
+            _xrOrigin.transform.localPosition = new Vector3(0,0, 0.259f);
+            _chair.transform.localEulerAngles = Vector3.zero;
+            _chair.transform.localPosition = Vector3.zero;
+        }
+        yield return new WaitForSeconds(2.8f);
+        _blackOverlay.SetActive(false);
+    }
+
+    public void CanTeleport()
+    {
+        canTeleport = true;
     }
 }
