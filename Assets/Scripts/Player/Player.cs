@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     private IEnumerator TeleportRoutine()
     {
         canTeleport = false;
-        yield return new WaitForSeconds(2.8f);
+        yield return new WaitForSeconds(2.6f);
         _inRegularPos = !_inRegularPos;
         if(_inRegularPos == false)
         {
@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
             _chair.transform.localEulerAngles = Vector3.zero;
             _chair.transform.localPosition = Vector3.zero;
         }
-        yield return new WaitForSeconds(2.8f);
+        yield return new WaitForSeconds(2.6f);
         _blackOverlay.SetActive(false);
     }
 
