@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cup
   - Power Core
+  - Ship
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - Post Processing
   - Water
   - UI
-  - 
+  - Laser
   - 
   - 
   - 
