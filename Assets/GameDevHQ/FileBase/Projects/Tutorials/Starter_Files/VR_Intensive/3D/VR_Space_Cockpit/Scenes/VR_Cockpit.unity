@@ -2097,20 +2097,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!64 &117129183
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 117129175}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4739996805434770647, guid: da0bb3735d684431eb9a9cd0c4c2b335, type: 3}
 --- !u!114 &117129184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2123,6 +2109,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1db6f03cb9edbe4d976d10520c7b115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &117129188
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117129175}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.04669516, y: 0.15011878, z: 0.07837636}
+  m_Center: {x: 0.0033112129, y: 0.008135525, z: 0.000000028695228}
 --- !u!1 &122520591 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3719960339852139661, guid: f2dc6559e355e544183c3b09b854054c, type: 3}
@@ -8232,15 +8231,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423602216}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.012418395, y: -14.5, z: 0.01999998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1846660103}
   - {fileID: 1941249392}
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 4665193951186210320}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &428224919
 MonoBehaviour:
@@ -8309,8 +8308,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.60809237, y: 1, z: 1}
+  m_Center: {x: -0.19595516, y: 0, z: 0}
 --- !u!23 &437671922
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10982,7 +10981,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 117129183}
+      - m_Target: {fileID: 117129188}
         m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -24888,14 +24887,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417571505}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.012418395, y: -14.5, z: 0.01999998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1953661931}
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 4665193951186210320}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1420274457
 GameObject:
@@ -25505,8 +25504,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.7041376, y: 1, z: 1}
+  m_Center: {x: 0.14793216, y: 0, z: 0}
 --- !u!23 &1449794432
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25637,7 +25636,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 419f171cdc9f749b1aea780b621ea49f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d05c5a530a195e946937097e2a3124fe, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -29095,7 +29094,7 @@ MonoBehaviour:
   m_HoverToSelect: 0
   m_HoverTimeToSelect: 0.5
   m_EnableUIInteraction: 1
-  m_AllowAnchorControl: 0
+  m_AllowAnchorControl: 1
   m_UseForceGrab: 1
   m_RotateSpeed: 180
   m_TranslateSpeed: 1
@@ -30222,7 +30221,7 @@ GameObject:
   - component: {fileID: 1706867713}
   - component: {fileID: 1706867712}
   - component: {fileID: 1706867716}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Eat Collider
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -36416,7 +36415,7 @@ MonoBehaviour:
   m_HoverToSelect: 0
   m_HoverTimeToSelect: 0.5
   m_EnableUIInteraction: 1
-  m_AllowAnchorControl: 0
+  m_AllowAnchorControl: 1
   m_UseForceGrab: 1
   m_RotateSpeed: 180
   m_TranslateSpeed: 1
