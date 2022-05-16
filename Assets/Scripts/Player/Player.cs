@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Player : MonoBehaviour
 {
@@ -53,5 +54,11 @@ public class Player : MonoBehaviour
     public void CanTeleport()
     {
         canTeleport = true;
+    }
+
+    public void VibrateController(XRDirectInteractor directInteractor)
+    {
+        //vibrate interactor
+        directInteractor.SendHapticImpulse(0.5f, 0.3f);
     }
 }

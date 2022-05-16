@@ -12,6 +12,7 @@ public class Hand : MonoBehaviour
     private float _gripTarget;
     [SerializeField] private float _speed;
     [SerializeField] private GameObject _handVisual;
+    [SerializeField] private XRDirectInteractor _directInteractor;
 
     // Start is called before the first frame update
     void Start()
@@ -37,5 +38,15 @@ public class Hand : MonoBehaviour
             _handVisual.SetActive(false);
         else
             _handVisual.SetActive(true);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Button")
+        {
+            _directInteractor.SendHapticImpulse(0.1f, 0.2f);
+        }
+        //if the tag is button
+        //vibrate
     }
 }
