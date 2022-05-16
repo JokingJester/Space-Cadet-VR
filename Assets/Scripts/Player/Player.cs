@@ -35,14 +35,14 @@ public class Player : MonoBehaviour
         if(_inRegularPos == false)
         {
             _xrOrigin.transform.localEulerAngles = new Vector3(0, 185.51f, 0);
-            _xrOrigin.transform.localPosition = new Vector3(0, 0.14f, -0.37f);
+            _xrOrigin.transform.localPosition = new Vector3(0, 0f, -0.37f);
             _chair.transform.localEulerAngles = new Vector3(0, -180, 0);
             _chair.transform.localPosition = new Vector3(0, 0, 0.13f);
         }
         else
         {
             _xrOrigin.transform.localEulerAngles = Vector3.zero;
-            _xrOrigin.transform.localPosition = new Vector3(0,0.14f, 0.259f);
+            _xrOrigin.transform.localPosition = new Vector3(0,0f, 0.259f);
             _chair.transform.localEulerAngles = Vector3.zero;
             _chair.transform.localPosition = Vector3.zero;
         }
