@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject _blackOverlay;
     [SerializeField] private GameObject _xrOrigin;
     [SerializeField] private GameObject _chair;
+    [SerializeField] private GameObject _selectHand;
     public bool drankCoffee;
     private bool _inRegularPos = true;
     public bool canTeleport;
@@ -60,5 +61,15 @@ public class Player : MonoBehaviour
     {
         //vibrate interactor
         directInteractor.SendHapticImpulse(0.5f, 0.3f);
+    }
+
+    public void SetChildHand(GameObject hand)
+    {
+        _selectHand = hand;
+    }
+
+    public void ChildGrabInteractable(GameObject interactable)
+    {
+        interactable.transform.parent = _selectHand.transform;
     }
 }

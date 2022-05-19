@@ -2368,6 +2368,18 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1706867716}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: ChildGrabInteractable
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 117129175}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 117129184}
         m_TargetAssemblyTypeName: GrabObject, Assembly-CSharp
         m_MethodName: ObjectGrab
@@ -2382,7 +2394,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 117129189}
+        m_TargetAssemblyTypeName: UnityEngine.Transform, UnityEngine
+        m_MethodName: set_parent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1452659044}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
@@ -2424,7 +2448,7 @@ MonoBehaviour:
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 1
+  m_SmoothPosition: 0
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
   m_TrackRotation: 1
@@ -2494,6 +2518,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04669516, y: 0.15011878, z: 0.07837636}
   m_Center: {x: 0.0033112129, y: 0.008135525, z: 0.000000028695228}
+--- !u!4 &117129189 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -3149259381561542761, guid: da0bb3735d684431eb9a9cd0c4c2b335, type: 3}
+  m_PrefabInstance: {fileID: 1129243633887329396}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &119040993 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 609a39fd05c404f4eaf15f5e09ed233c, type: 3}
@@ -6732,10 +6761,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1706867716}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: ChildGrabInteractable
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 267858784}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 267858788}
+        m_TargetAssemblyTypeName: UnityEngine.Transform, UnityEngine
+        m_MethodName: set_parent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 176915061}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Activated:
     m_PersistentCalls:
       m_Calls:
@@ -6801,7 +6854,7 @@ MonoBehaviour:
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 1
+  m_SmoothPosition: 0
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
   m_TrackRotation: 1
@@ -29468,6 +29521,7 @@ MonoBehaviour:
   _blackOverlay: {fileID: 0}
   _xrOrigin: {fileID: 0}
   _chair: {fileID: 0}
+  _selectHand: {fileID: 0}
   drankCoffee: 0
   canTeleport: 0
 --- !u!82 &1319243909
@@ -35203,10 +35257,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1706867716}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: ChildGrabInteractable
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1480395029}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1480395033}
+        m_TargetAssemblyTypeName: UnityEngine.Transform, UnityEngine
+        m_MethodName: set_parent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 111428563}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
@@ -35248,7 +35326,7 @@ MonoBehaviour:
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 1
+  m_SmoothPosition: 0
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
   m_TrackRotation: 1
@@ -38785,7 +38863,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1706867716}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: SetChildHand
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1633541581}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -40040,6 +40130,7 @@ MonoBehaviour:
   _blackOverlay: {fileID: 2099384184}
   _xrOrigin: {fileID: 137256451}
   _chair: {fileID: 1393580472}
+  _selectHand: {fileID: 0}
   drankCoffee: 0
   canTeleport: 0
 --- !u!1001 &1713498972
@@ -42719,8 +42810,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 209cef21cfc96984aa429b6bda9de0fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 0
-  _objectiveIndex: 0
+  _index: 1
+  _objectiveIndex: 9
   _allSequences:
   - {fileID: 370351832}
   - {fileID: 212924657}
@@ -43389,10 +43480,34 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1706867716}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: ChildGrabInteractable
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1933863239}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1933863240}
+        m_TargetAssemblyTypeName: UnityEngine.Transform, UnityEngine
+        m_MethodName: set_parent
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8929715316263606520}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Activated:
     m_PersistentCalls:
       m_Calls: []
@@ -43434,7 +43549,7 @@ MonoBehaviour:
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 1
+  m_SmoothPosition: 0
   m_SmoothPositionAmount: 5
   m_TightenPosition: 0.5
   m_TrackRotation: 1
@@ -46243,7 +46358,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 2034377233}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -48285,7 +48400,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1706867716}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: SetChildHand
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2121002226}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
