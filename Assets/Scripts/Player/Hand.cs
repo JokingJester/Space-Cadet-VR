@@ -13,7 +13,6 @@ public class Hand : MonoBehaviour
     private float _gripTarget;
     private float _triggerTarget;
     [SerializeField] private float _speed;
-    [SerializeField] private GameObject _handVisual;
     [SerializeField] private XRDirectInteractor _directInteractor;
 
     // Start is called before the first frame update
@@ -43,10 +42,7 @@ public class Hand : MonoBehaviour
 
     public void ToggleHandVisual()
     {
-        if (_handVisual.activeInHierarchy == true)
-            _handVisual.SetActive(false);
-        else
-            _handVisual.SetActive(true);
+
     }
 
     private void OnTriggerEnter(Collider other)

@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject _xrOrigin;
     [SerializeField] private GameObject _chair;
     [SerializeField] private GameObject _selectHand;
+    [SerializeField] private SkinnedMeshRenderer _handVisual;
     public bool drankCoffee;
     private bool _inRegularPos = true;
     public bool canTeleport;
@@ -66,10 +67,18 @@ public class Player : MonoBehaviour
     public void SetChildHand(GameObject hand)
     {
         _selectHand = hand;
+        _handVisual = _selectHand.GetComponentInChildren<SkinnedMeshRenderer>();
+
     }
 
     public void ChildGrabInteractable(GameObject interactable)
     {
         interactable.transform.parent = _selectHand.transform;
+        _handVisual.enabled = false;
+    }
+
+    public void EnableHand()
+    {
+        _handVisual.enabled = true;
     }
 }

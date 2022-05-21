@@ -6,7 +6,6 @@ public class Laser : MonoBehaviour
 {
     [SerializeField] private float _speed;
     [SerializeField] private GameObject _bulletSpark;
-    [SerializeField] private GameObject _explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,11 +29,7 @@ public class Laser : MonoBehaviour
                 fighter.health--;
                 if(fighter.health <= 0)
                 {
-                    fighter.destroyedXWingTimeline.SetActive(true);
-                    Destroy(other.gameObject,0.4f);
-                   GameObject explosion = Instantiate(_explosion, transform.position, transform.rotation);
-                    Destroy(explosion, 5f);
-
+                    fighter.DestroyFighter();
                 }
             }
         }
@@ -42,6 +37,5 @@ public class Laser : MonoBehaviour
         Destroy(spark, 1.1f);
         this.gameObject.SetActive(false);
         Destroy(this.gameObject, 5f);
-
     }
 }
