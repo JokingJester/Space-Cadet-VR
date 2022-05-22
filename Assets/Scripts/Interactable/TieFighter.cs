@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using TMPro;
 public class TieFighter : MonoBehaviour
 {
     [SerializeField] private GameObject _greenLaser;
     [SerializeField] public GameObject destroyedXWingTimeline;
     [SerializeField] private GameObject _explosion;
+    [SerializeField] private TMP_Text _livesText;
     public float health;
     public void SpawnLaser()
     {
@@ -22,6 +24,16 @@ public class TieFighter : MonoBehaviour
         Destroy(explosion, 4.5f);
 
         StartCoroutine(DestroyRoutine());
+    }
+
+    public void Damage()
+    {
+        health--;
+        _livesText.text = health.ToString();
+        if (health <= 0)
+        {
+            DestroyFighter();
+        }
     }
 
     private IEnumerator DestroyRoutine()

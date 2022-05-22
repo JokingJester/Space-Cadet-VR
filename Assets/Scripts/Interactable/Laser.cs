@@ -26,11 +26,7 @@ public class Laser : MonoBehaviour
             TieFighter fighter = other.gameObject.GetComponent<TieFighter>();
             if(fighter != null)
             {
-                fighter.health--;
-                if(fighter.health <= 0)
-                {
-                    fighter.DestroyFighter();
-                }
+                fighter.Damage();
             }
         }
         GameObject spark = Instantiate(_bulletSpark, transform.position, transform.rotation);
