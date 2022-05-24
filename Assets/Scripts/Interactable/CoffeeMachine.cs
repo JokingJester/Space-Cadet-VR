@@ -9,6 +9,7 @@ public class CoffeeMachine : MonoBehaviour
     [SerializeField] private AudioClip _coffeePourSound;
     [SerializeField] private GameObject _coffeePrefab;
     [SerializeField] private GameObject _coffeeSpawnPos;
+    [SerializeField] private Transform _cockpitTransform;
     [SerializeField] private Button _button;
 
     public void PourCoffee()
@@ -27,7 +28,8 @@ public class CoffeeMachine : MonoBehaviour
         while(coffeeSpawned != 5)
         {
             coffeeSpawned++;
-            Instantiate(_coffeePrefab, _coffeeSpawnPos.transform.position, Quaternion.identity);
+           GameObject coffee = Instantiate(_coffeePrefab, _coffeeSpawnPos.transform.position, Quaternion.identity);
+            coffee.transform.parent = _cockpitTransform;
             yield return new WaitForSeconds(1.5f);
         }
         yield return new WaitForSeconds(1f);

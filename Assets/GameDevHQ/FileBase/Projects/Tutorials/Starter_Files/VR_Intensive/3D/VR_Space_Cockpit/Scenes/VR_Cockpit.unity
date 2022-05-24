@@ -451,9 +451,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 18441343}
   _audioSource: {fileID: 18441344}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!65 &18441346
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1138,9 +1140,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 69048680}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &69048680
 Animator:
   serializedVersion: 4
@@ -1337,9 +1341,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 79053347}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &79053345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2667,9 +2673,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 122520597}
   _audioSource: {fileID: 122520595}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &122520597
 Animator:
   serializedVersion: 4
@@ -4019,7 +4027,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185417744}
   m_LocalRotation: {x: -0.5163909, y: -0.57863194, z: -0.4384614, w: 0.45417738}
-  m_LocalPosition: {x: 0.0031313743, y: 0.027690662, z: -0.017591566}
+  m_LocalPosition: {x: 0.0031, y: 0.027690662, z: 0.001}
   m_LocalScale: {x: 1.2335758, y: 1.2335762, z: 1.2335763}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5485,9 +5493,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 223517892}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &223517892
 Animator:
   serializedVersion: 4
@@ -6596,9 +6606,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 264651430}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 1
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &264651430
 Animator:
   serializedVersion: 4
@@ -7044,6 +7056,7 @@ MonoBehaviour:
   destroyedXWingTimeline: {fileID: 0}
   _explosion: {fileID: 0}
   _livesText: {fileID: 0}
+  _cockpitTransform: {fileID: 4383310485873021993}
   health: 0
 --- !u!82 &267858793
 AudioSource:
@@ -7663,9 +7676,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 310057990}
   _audioSource: {fileID: 310057988}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &310057990
 Animator:
   serializedVersion: 4
@@ -7808,9 +7823,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 311128642}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &311128640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9797,9 +9814,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 373979666}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &373979666
 Animator:
   serializedVersion: 4
@@ -11003,9 +11022,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 536233777}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!1 &437671919
 GameObject:
   m_ObjectHideFlags: 0
@@ -12450,9 +12471,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 509473227}
   _audioSource: {fileID: 509473228}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &509473227
 Animator:
   serializedVersion: 4
@@ -14078,9 +14101,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 591163119}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 1
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &591163121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15437,9 +15462,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 629320378}
   _audioSource: {fileID: 629320376}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &629320378
 Animator:
   serializedVersion: 4
@@ -15843,9 +15870,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 326095326}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!1 &659324879
 GameObject:
   m_ObjectHideFlags: 0
@@ -15911,9 +15940,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 659520497}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &659520495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17716,9 +17747,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 997990258}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!1 &764990571
 GameObject:
   m_ObjectHideFlags: 0
@@ -17938,9 +17971,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 776641917}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &776641917
 Animator:
   serializedVersion: 4
@@ -18453,9 +18488,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 785808642}
   _audioSource: {fileID: 785808640}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &785808642
 Animator:
   serializedVersion: 4
@@ -20834,9 +20871,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 956734826}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &956734826
 Animator:
   serializedVersion: 4
@@ -21494,9 +21533,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 989769359}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &989769358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22577,9 +22618,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1022546425}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &1022546425
 Animator:
   serializedVersion: 4
@@ -22824,9 +22867,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1026271148}
   _audioSource: {fileID: 1026271146}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &1026271148
 Animator:
   serializedVersion: 4
@@ -23299,9 +23344,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1048807709}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &1048807707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23673,6 +23720,7 @@ MonoBehaviour:
   _coffeePourSound: {fileID: 8300000, guid: 0c46302cc5ad2b740aa07aba41651fd4, type: 3}
   _coffeePrefab: {fileID: 7032022701057059584, guid: caa603107b84060419fa05c84a7fe8d7, type: 3}
   _coffeeSpawnPos: {fileID: 229391494}
+  _cockpitTransform: {fileID: 0}
   _button: {fileID: 1050222626}
 --- !u!65 &1050222623
 BoxCollider:
@@ -23899,9 +23947,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1050222627}
   _audioSource: {fileID: 1050222625}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &1050222627
 Animator:
   serializedVersion: 4
@@ -25625,9 +25675,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1131575317}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &1131575317
 Animator:
   serializedVersion: 4
@@ -28186,9 +28238,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1246686493}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &1246686493
 Animator:
   serializedVersion: 4
@@ -28694,9 +28748,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1257589161}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &1257589161
 Animator:
   serializedVersion: 4
@@ -29665,9 +29721,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1309819238}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &1309819238
 Animator:
   serializedVersion: 4
@@ -31479,9 +31537,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1368911607}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &1368911607
 Animator:
   serializedVersion: 4
@@ -31926,9 +31986,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1377191025}
   _audioSource: {fileID: 1377191023}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &1377191025
 Animator:
   serializedVersion: 4
@@ -33333,9 +33395,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1395961824}
   _audioSource: {fileID: 1395961822}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &1395961824
 Animator:
   serializedVersion: 4
@@ -34267,6 +34331,7 @@ MonoBehaviour:
   destroyedXWingTimeline: {fileID: 0}
   _explosion: {fileID: 0}
   _livesText: {fileID: 0}
+  _cockpitTransform: {fileID: 0}
   health: 3
 --- !u!114 &1430672937
 MonoBehaviour:
@@ -34950,9 +35015,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1463292410}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &1463292412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36003,6 +36070,7 @@ MonoBehaviour:
   destroyedXWingTimeline: {fileID: 1417571505}
   _explosion: {fileID: 7571110843994879356, guid: e1df2e50500ab0146b9b8446263eddbb, type: 3}
   _livesText: {fileID: 1819875202}
+  _cockpitTransform: {fileID: 0}
   health: 5
 --- !u!1 &1483272217
 GameObject:
@@ -36250,9 +36318,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1492841161}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &1492841159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37877,9 +37947,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1569570762}
   _audioSource: {fileID: 1569570763}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &1569570765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38184,9 +38256,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1571872669}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &1571872669
 Animator:
   serializedVersion: 4
@@ -38896,9 +38970,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1604656023}
   _audioSource: {fileID: 1604656022}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 1
   isGreen: 1
+  _renderer: {fileID: 0}
 --- !u!114 &1604656025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39868,9 +39944,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1642723630}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &1642723629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45118,9 +45196,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 1941381512}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &1941381510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46348,9 +46428,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 2001745780}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &2001745778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46999,9 +47081,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 2017779308}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &2017779308
 Animator:
   serializedVersion: 4
@@ -47452,9 +47536,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 2019429911}
   _audioSource: {fileID: 2019429909}
+  _collider: {fileID: 2019429907}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 2019429912}
 --- !u!95 &2019429911
 Animator:
   serializedVersion: 4
@@ -47541,6 +47627,7 @@ MonoBehaviour:
   _coffeePourSound: {fileID: 8300000, guid: 0c46302cc5ad2b740aa07aba41651fd4, type: 3}
   _coffeePrefab: {fileID: 7032022701057059584, guid: caa603107b84060419fa05c84a7fe8d7, type: 3}
   _coffeeSpawnPos: {fileID: 1029341270}
+  _cockpitTransform: {fileID: 4383310485873021993}
   _button: {fileID: 2019429910}
 --- !u!4 &2027606475 stripped
 Transform:
@@ -49065,9 +49152,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 2102511774}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &2102511772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50188,9 +50277,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 2132924730}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!95 &2132924730
 Animator:
   serializedVersion: 4
@@ -56823,9 +56914,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 4665193951186210329}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &4665193951186210335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56840,9 +56933,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 4665193951186210330}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &4665193951186210336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56857,9 +56952,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 4665193951186210331}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &4665193951186210337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56874,9 +56971,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 4665193951186210332}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!114 &4665193951186210338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56891,9 +56990,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _anim: {fileID: 4665193951186210333}
   _audioSource: {fileID: 0}
+  _collider: {fileID: 0}
   buttonPressed: 0
   underButtonCover: 0
   isGreen: 0
+  _renderer: {fileID: 0}
 --- !u!65 &4665193951186210339
 BoxCollider:
   m_ObjectHideFlags: 0

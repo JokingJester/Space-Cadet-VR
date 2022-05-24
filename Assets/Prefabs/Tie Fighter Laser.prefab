@@ -114,7 +114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 1
   _bulletSpark: {fileID: 1047824417248462, guid: 86991083bf70246cab4905f681be4c36, type: 3}
-  _explosion: {fileID: 7571110843994879356, guid: e1df2e50500ab0146b9b8446263eddbb, type: 3}
+  _renderer: {fileID: 0}
+  _collider: {fileID: 0}
 --- !u!54 &3283562938653974417
 Rigidbody:
   m_ObjectHideFlags: 0

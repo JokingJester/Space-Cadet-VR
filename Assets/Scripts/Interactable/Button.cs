@@ -6,11 +6,12 @@ public class Button : MonoBehaviour
 {
     [SerializeField] private Animator _anim;
     [SerializeField] private AudioSource _audioSource;
-
+    [SerializeField] private BoxCollider _collider;
     public bool buttonPressed;
     public bool underButtonCover;
     public bool isGreen;
     private bool _canPressButton;
+    [SerializeField] private MeshRenderer _renderer;
 
     private void Awake()
     {

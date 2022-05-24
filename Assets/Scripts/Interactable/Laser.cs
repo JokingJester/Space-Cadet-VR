@@ -6,10 +6,13 @@ public class Laser : MonoBehaviour
 {
     [SerializeField] private float _speed;
     [SerializeField] private GameObject _bulletSpark;
+    [SerializeField] private MeshRenderer _renderer;
+    [SerializeField] private CapsuleCollider _collider;
     // Start is called before the first frame update
     void Start()
     {
-        
+        _renderer = GetComponent<MeshRenderer>();
+        _collider = GetComponent<CapsuleCollider>();
     }
 
     // Update is called once per frame
@@ -29,9 +32,12 @@ public class Laser : MonoBehaviour
                 fighter.Damage();
             }
         }
+        _collider.enabled = false;
+        _speed = 0;
         GameObject spark = Instantiate(_bulletSpark, transform.position, transform.rotation);
+        spark.transform.parent = this.transform;
+        _renderer.enabled = false;
         Destroy(spark, 1.1f);
-        this.gameObject.SetActive(false);
         Destroy(this.gameObject, 5f);
     }
 }
