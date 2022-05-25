@@ -5,15 +5,25 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class Player : MonoBehaviour
 {
+    private bool _inRegularPos = true;
+    private WaitForSeconds _twoPointSix;
+
     [SerializeField] private AudioSource _audioSource;
+
     [SerializeField] private GameObject _blackOverlay;
     [SerializeField] private GameObject _xrOrigin;
     [SerializeField] private GameObject _chair;
     [SerializeField] private GameObject _selectHand;
+
     [SerializeField] private SkinnedMeshRenderer _handVisual;
+   
     public bool drankCoffee;
-    private bool _inRegularPos = true;
     public bool canTeleport;
+
+    private void Start()
+    {
+        _twoPointSix = new WaitForSeconds(2.6f);
+    }
 
     public void DrinkCoffee()
     {
@@ -33,7 +43,7 @@ public class Player : MonoBehaviour
     private IEnumerator TeleportRoutine()
     {
         canTeleport = false;
-        yield return new WaitForSeconds(2.6f);
+        yield return _twoPointSix;
         _inRegularPos = !_inRegularPos;
         if(_inRegularPos == false)
         {
@@ -49,7 +59,7 @@ public class Player : MonoBehaviour
             _chair.transform.localEulerAngles = Vector3.zero;
             _chair.transform.localPosition = Vector3.zero;
         }
-        yield return new WaitForSeconds(2.6f);
+        yield return _twoPointSix;
         _blackOverlay.SetActive(false);
     }
 
@@ -60,7 +70,6 @@ public class Player : MonoBehaviour
 
     public void VibrateController(XRDirectInteractor directInteractor)
     {
-        //vibrate interactor
         directInteractor.SendHapticImpulse(0.5f, 0.3f);
     }
 

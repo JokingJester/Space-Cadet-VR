@@ -5,12 +5,20 @@ using UnityEngine.XR.Interaction.Toolkit;
 using TMPro;
 public class TieFighter : MonoBehaviour
 {
+    private WaitForSeconds _zeroPointTwo;
+    private WaitForSeconds _zeroPointFourThree;
     [SerializeField] private GameObject _greenLaser;
     [SerializeField] public GameObject destroyedXWingTimeline;
     [SerializeField] private GameObject _explosion;
     [SerializeField] private TMP_Text _livesText;
     [SerializeField] private Transform _cockpitTransform;
     public float health;
+
+    private void Start()
+    {
+        _zeroPointTwo = new WaitForSeconds(0.2f);
+        _zeroPointFourThree = new WaitForSeconds(0.43f);
+    }
     public void SpawnLaser()
     {
         GameObject laser = Instantiate(_greenLaser, transform.position, transform.rotation);
@@ -41,10 +49,10 @@ public class TieFighter : MonoBehaviour
 
     private IEnumerator DestroyRoutine()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return _zeroPointTwo;
         destroyedXWingTimeline.SetActive(true);
 
-        yield return new WaitForSeconds(0.43f);
+        yield return _zeroPointFourThree;
         Destroy(this.gameObject);
     }
 }
