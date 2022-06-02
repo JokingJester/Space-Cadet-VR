@@ -5,15 +5,18 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cup
+  - Power Core
+  - Ship
+  - Button
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Post Processing
   - Water
   - UI
-  - 
-  - 
+  - Laser
+  - Interactable
   - 
   - 
   - 

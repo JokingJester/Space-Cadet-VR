@@ -6,10 +6,12 @@ public class Button : MonoBehaviour
 {
     [SerializeField] private Animator _anim;
     [SerializeField] private AudioSource _audioSource;
-
+    [SerializeField] private BoxCollider _collider;
     public bool buttonPressed;
     public bool underButtonCover;
+    public bool isGreen;
     private bool _canPressButton;
+    [SerializeField] private MeshRenderer _renderer;
 
     private void Awake()
     {
@@ -30,7 +32,14 @@ public class Button : MonoBehaviour
     {
         _canPressButton = true;
         _anim.ResetTrigger("Flip");
-        _anim.SetTrigger("Flash");
+        if (isGreen == true)
+        {
+            _anim.SetTrigger("Flash Green");
+        }
+        else
+        {
+            _anim.SetTrigger("Flash");
+        }
     }
 
     public void FlipSwitch()
@@ -61,6 +70,7 @@ public class Button : MonoBehaviour
         _anim.ResetTrigger("Flip Under Cover");
         _anim.ResetTrigger("Flip");
         _anim.ResetTrigger("Flash");
+        _anim.ResetTrigger("Flash Green");
         PlayFlashAnimation();
     }
 }

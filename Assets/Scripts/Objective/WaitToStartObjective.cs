@@ -12,7 +12,14 @@ public class WaitToStartObjective : Objective
 
     public override void StartObjective()
     {
-        StartCoroutine(WaitRoutine());
+        if(_seconds != 0)
+        {
+            StartCoroutine(WaitRoutine());
+        }
+        else
+        {
+            CallUnityEvent();
+        }
     }
 
     private void Start()
@@ -22,6 +29,11 @@ public class WaitToStartObjective : Objective
     private IEnumerator WaitRoutine()
     {
         yield return _waitTime;
+        CallUnityEvent();
+    }
+
+    private void CallUnityEvent()
+    {
         if (_event != null)
         {
             _event.Invoke();

@@ -14,4 +14,10 @@ public class PlaceCockpitInDolly : Objective
         _cockpit.transform.localPosition = Vector3.zero;
         ObjectiveComplete();
     }
+
+
+    public void TakeCockpitOutCart()
+    {
+        _cockpit.transform.parent = null;
+    }
 }
