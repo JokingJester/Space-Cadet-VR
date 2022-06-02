@@ -8,8 +8,8 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 3507212b5118c194fbe40f439f5bcca4
+  m_OcclusionCullingData: {fileID: 36300000, guid: 79118354d0a759a4d82ac7f1a11a58e3, type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -8350,6 +8350,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 653794faa895f4e28b30e25446177ae4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 653794faa895f4e28b30e25446177ae4, type: 3}
 --- !u!65 &497014237
@@ -8377,6 +8381,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1182464882}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1939da864b4714da0924825ae71676db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 1939da864b4714da0924825ae71676db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 1939da864b4714da0924825ae71676db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 1939da864b4714da0924825ae71676db, type: 3}
       propertyPath: m_Name
       value: SpaceDreadnought04
@@ -8384,6 +8400,10 @@ PrefabInstance:
     - target: {fileID: 100006, guid: 1939da864b4714da0924825ae71676db, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 1939da864b4714da0924825ae71676db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 1939da864b4714da0924825ae71676db, type: 3}
       propertyPath: m_RootOrder
@@ -18475,7 +18495,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1126771901
 Transform:
   m_ObjectHideFlags: 0
@@ -20862,6 +20882,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 73de6db40361844edb98a1578f1e5b0c, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 73de6db40361844edb98a1578f1e5b0c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73de6db40361844edb98a1578f1e5b0c, type: 3}
@@ -32805,6 +32829,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1182464882}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1939da864b4714da0924825ae71676db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 1939da864b4714da0924825ae71676db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 1939da864b4714da0924825ae71676db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
+      objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 1939da864b4714da0924825ae71676db, type: 3}
       propertyPath: m_Name
       value: SpaceDreadnought04 (1)
@@ -32812,6 +32848,10 @@ PrefabInstance:
     - target: {fileID: 100006, guid: 1939da864b4714da0924825ae71676db, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 1939da864b4714da0924825ae71676db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 1939da864b4714da0924825ae71676db, type: 3}
       propertyPath: m_RootOrder
