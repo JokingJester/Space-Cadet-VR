@@ -950,7 +950,7 @@ GameObject:
   - component: {fileID: 76790781}
   - component: {fileID: 76790782}
   m_Layer: 0
-  m_Name: Go To Main Menu
+  m_Name: Quit Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -980,13 +980,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 76790780}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb74a484476be2443a9a0da25d792b31, type: 3}
+  m_Script: {fileID: 11500000, guid: ec1bc6fdaec589a459f68cb6b06cd9d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _seconds: 0
-  _event:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &79053340 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 585b6ff37a79c4238897bdb1963f4c85, type: 3}
@@ -20951,6 +20947,7 @@ MonoBehaviour:
   - {fileID: 195038130}
   - {fileID: 784946445}
   - {fileID: 640877036}
+  - {fileID: 76790782}
 --- !u!4 &1279763670
 Transform:
   m_ObjectHideFlags: 0
