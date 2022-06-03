@@ -26,10 +26,10 @@ public class Laser : MonoBehaviour
     {
         if(other.tag == "Ship")
         {
-            TieFighter fighter = other.gameObject.GetComponent<TieFighter>();
-            if(fighter != null)
+            XWing xwing = other.gameObject.GetComponent<XWing>();
+            if(xwing != null)
             {
-                fighter.Damage();
+                xwing.Damage();
             }
         }
         _collider.enabled = false;
