@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour
     public int index;
     public GameObject blackOverlay;
     public TMP_Text _messageText;
+    public TMP_Text _wristMenuSubtitleText;
     private void Awake()
     {
         _instance = this;
@@ -43,5 +44,21 @@ public class UIManager : MonoBehaviour
         }
         blackOverlay.transform.localScale = Vector3.zero;
         _messageText.text = "";
+    }
+
+    public void ToggleSubtitles()
+    {
+        if(_messageText.gameObject.activeInHierarchy == true)
+        {
+            _wristMenuSubtitleText.text = "Subtitles - OFF";
+            _messageText.gameObject.SetActive(false);
+            blackOverlay.SetActive(false);
+        }
+        else
+        {
+            _wristMenuSubtitleText.text = "Subtitles - ON";
+            _messageText.gameObject.SetActive(true);
+            blackOverlay.SetActive(true);
+        }
     }
 }
