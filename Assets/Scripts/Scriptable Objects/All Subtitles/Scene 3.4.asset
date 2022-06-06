@@ -16,6 +16,7 @@ MonoBehaviour:
   - message: "Alright Cadet lets get you home. One last warp should do it. I entered
       in the coordinates in\u2026..correctly this time."
     secondsDisplayed: 10
+    blackOverlaySize: {x: 0.015, y: 0.005, z: 1}
   textPos: {x: -0.463, y: 1.169, z: 1.452}
   textRotation: {x: 0, y: 0, z: 0}
-  textColor: {r: 0, g: 0.14509805, b: 0.7647059, a: 1}
+  textColor: {r: 1, g: 1, b: 1, a: 0.7372549}

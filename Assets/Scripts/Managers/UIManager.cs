@@ -16,6 +16,7 @@ public class UIManager : MonoBehaviour
         }
     }
     public int index;
+    public GameObject blackOverlay;
     public TMP_Text _messageText;
     private void Awake()
     {
@@ -36,9 +37,11 @@ public class UIManager : MonoBehaviour
         while(index != dialogue.subtitles.Length)
         {
             _messageText.text = dialogue.subtitles[index].message;
+            blackOverlay.transform.localScale = dialogue.subtitles[index].blackOverlaySize;
             yield return new WaitForSeconds(dialogue.subtitles[index].secondsDisplayed);
             index++;
         }
+        blackOverlay.transform.localScale = Vector3.zero;
         _messageText.text = "";
     }
 }

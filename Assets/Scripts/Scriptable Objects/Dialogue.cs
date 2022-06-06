@@ -7,6 +7,7 @@ public struct Subtitles
 {
     public string message;
     public float secondsDisplayed;
+    public Vector3 blackOverlaySize;
 }
 
 [CreateAssetMenu(fileName = "dialogue.asset", menuName = "Subtitles/Dialogue")]
