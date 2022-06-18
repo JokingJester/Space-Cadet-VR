@@ -1,36 +1,61 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Throttle : MonoBehaviour
 {
-    public HingeJoint joint;
-    public float speed;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool _grabbedThrottle;
 
-    // Update is called once per frame
+    [SerializeField] private float _disableJoystickDistance = 0.25f;
+    [SerializeField] private HingeJoint joint;
+    [SerializeField] private XRGrabInteractable _interact;
+
+    [HideInInspector] public float _speed;
+    [HideInInspector] public GameObject handGrabbingJoystick;
+
     void Update()
     {
         ChangeSpeed();
+        StopJitter();
     }
 
     public void ChangeSpeed()
     {
         if (joint.angle > 0.1f && joint.angle <= 10)
-            speed = 1;
+            _speed = 3;
         else if (joint.angle > 0.1f && joint.angle <= 15 && joint.angle < 20)
-            speed = 2;
+            _speed = 5;
         else if (joint.angle > 0.1f && joint.angle <= 20 && joint.angle < 25)
-            speed = 3;
+            _speed = 8;
         else if (joint.angle > 0.1f && joint.angle <= 25 && joint.angle <= 30)
-            speed = 4;
+            _speed = 10;
         else if (joint.angle > 0.1f && joint.angle > 25)
-            speed = 5;
+            _speed = 13;
         else if (joint.angle < -29)
-            speed = 0;
+            _speed = 0;
+    }
+
+    private void StopJitter()
+    {
+        if (handGrabbingJoystick != null)
+        {
+            float distance = Vector3.Distance(handGrabbingJoystick.transform.position, transform.position);
+            if (distance >= _disableJoystickDistance && _grabbedThrottle == true)
+            {
+                _interact.enabled = false;
+                _interact.enabled = true;
+            }
+        }
+    }
+
+    public void SelectHandGrabbingJoystick(GameObject hand)
+    {
+        if (_grabbedThrottle == false)
+            handGrabbingJoystick = hand;
+    }
+
+    public void ToggleGrab()
+    {
+        _grabbedThrottle = !_grabbedThrottle;
     }
 }

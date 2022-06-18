@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class GenerateAsteroids : MonoBehaviour
@@ -8,7 +7,7 @@ public class GenerateAsteroids : MonoBehaviour
     public GameObject[] asteroid;
     void Start()
     {
-        for(int i = 0; i < 12; i++)
+        for(int i = 0; i < 25; i++)
         {
             GameObject chosenAsteroid = asteroid[Random.Range(0, asteroid.Length)].gameObject;
             GameObject spawnedAsteroid = Instantiate(chosenAsteroid,transform.position + Random.insideUnitSphere * radius ,Quaternion.identity);

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -16,6 +15,8 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject _selectHand;
 
     [SerializeField] private SkinnedMeshRenderer _handVisual;
+    [SerializeField] private FlightStick _flightStick;
+    [SerializeField] private Throttle _throttle;
    
     public bool drankCoffee;
     public bool canTeleport;
@@ -77,7 +78,8 @@ public class Player : MonoBehaviour
     {
         _selectHand = hand;
         _handVisual = _selectHand.GetComponentInChildren<SkinnedMeshRenderer>();
-
+        _flightStick.SelectHandGrabbingJoystick(_selectHand);
+        _throttle.SelectHandGrabbingJoystick(_selectHand);
     }
 
     public void ChildGrabInteractable(GameObject interactable)
