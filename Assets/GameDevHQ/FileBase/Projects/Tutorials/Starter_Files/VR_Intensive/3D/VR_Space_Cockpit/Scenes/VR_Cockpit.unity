@@ -6649,10 +6649,6 @@ PlayableDirector:
     value: {fileID: 420107070}
   - key: {fileID: 7310627027072409160, guid: 3d81d40401b6f284c946e3ea134fa995, type: 2}
     value: {fileID: 174045303}
-  - key: {fileID: 3496009182251067542, guid: 3d81d40401b6f284c946e3ea134fa995, type: 2}
-    value: {fileID: 1931007931}
-  - key: {fileID: -7599278579613598495, guid: 3d81d40401b6f284c946e3ea134fa995, type: 2}
-    value: {fileID: 1370152041}
   - key: {fileID: -849453754777226560, guid: 3d81d40401b6f284c946e3ea134fa995, type: 2}
     value: {fileID: 705507996}
   - key: {fileID: 4176734114160059459, guid: 3d81d40401b6f284c946e3ea134fa995, type: 2}
@@ -14026,7 +14022,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764990571}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
@@ -20078,7 +20074,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073698501}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -22770,9 +22766,9 @@ PlayableDirector:
     value: {fileID: 420107070}
   - key: {fileID: 7310627027072409160, guid: 3d81d40401b6f284c946e3ea134fa995, type: 2}
     value: {fileID: 174045303}
-  - key: {fileID: 3496009182251067542, guid: 3d81d40401b6f284c946e3ea134fa995, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 1931007931}
-  - key: {fileID: -7599278579613598495, guid: 3d81d40401b6f284c946e3ea134fa995, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 1370152041}
   - key: {fileID: 3129072745298925278, guid: 59848f9c1752d374c83965ebfe228615, type: 2}
     value: {fileID: 0}
@@ -35004,9 +35000,9 @@ PlayableDirector:
     value: {fileID: 420107070}
   - key: {fileID: 7310627027072409160, guid: 3d81d40401b6f284c946e3ea134fa995, type: 2}
     value: {fileID: 174045303}
-  - key: {fileID: 3496009182251067542, guid: 3d81d40401b6f284c946e3ea134fa995, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 1931007931}
-  - key: {fileID: -7599278579613598495, guid: 3d81d40401b6f284c946e3ea134fa995, type: 2}
+  - key: {fileID: 0}
     value: {fileID: 1370152041}
   - key: {fileID: 3129072745298925278, guid: 59848f9c1752d374c83965ebfe228615, type: 2}
     value: {fileID: 0}
