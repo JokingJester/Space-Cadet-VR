@@ -58,3 +58,27 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+*.dll
+*.config
+*.browser
+*.map
+*.ini
+FINAL SPACE CADET BUILD WITH FLIGHT/MonoBleedingEdge/etc/mono/config
+FINAL SPACE CADET BUILD WITH FLIGHT/MonoBleedingEdge/etc/mono/mconfig/config.xml
+*.exe
+*.zip
+*.info
+FINAL SPACE CADET BUILD WITH FLIGHT/Space Cadet VR_Data/globalgamemanagers
+*.assets
+FINAL SPACE CADET BUILD WITH FLIGHT/Space Cadet VR_Data/globalgamemanagers.assets.resS
+FINAL SPACE CADET BUILD WITH FLIGHT/Space Cadet VR_Data/level0
+FINAL SPACE CADET BUILD WITH FLIGHT/Space Cadet VR_Data/level0.resS
+FINAL SPACE CADET BUILD WITH FLIGHT/Space Cadet VR_Data/resources.assets.resS
+FINAL SPACE CADET BUILD WITH FLIGHT/Space Cadet VR_Data/Resources/unity default resources
+FINAL SPACE CADET BUILD WITH FLIGHT/Space Cadet VR_Data/Resources/unity_builtin_extra
+FINAL SPACE CADET BUILD WITH FLIGHT/Space Cadet VR_Data/RuntimeInitializeOnLoads.json
+FINAL SPACE CADET BUILD WITH FLIGHT/Space Cadet VR_Data/ScriptingAssemblies.json
+FINAL SPACE CADET BUILD WITH FLIGHT/Space Cadet VR_Data/sharedassets0.assets.resS
+FINAL SPACE CADET BUILD WITH FLIGHT/Space Cadet VR_Data/sharedassets0.resource
+FINAL SPACE CADET BUILD WITH FLIGHT/Space Cadet VR_Data/UnitySubsystems/OculusXRPlugin/UnitySubsystemsManifest.json
+FINAL SPACE CADET BUILD WITH FLIGHT/Space Cadet VR_Data/UnitySubsystems/UnityOpenXR/UnitySubsystemsManifest.json

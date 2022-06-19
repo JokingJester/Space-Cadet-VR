@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0fdcd5e1c765642ba322e7bf487786, type: 3}
+  m_Name: Scene 1.5
+  m_EditorClassIdentifier: 
+  subtitles:
+  - message: Okay that should be far enough, flip up the cover by the flight stick
+      there, and press the warp switch,
+    secondsDisplayed: 8.7
+  - message: we're just jumping you to the other side of sector 42.
+    secondsDisplayed: 3.9
+  - message: "Scanners are showing there\u2019s nothing over there but space dust."
+    secondsDisplayed: 4
+  - message: "Hit it whenever you\u2019re ready, Cadet. "
+    secondsDisplayed: 3.2
+  textPos: {x: -0.463, y: 1.169, z: 1.452}
+  textRotation: {x: 0, y: 0, z: 0}
+  textColor: {r: 1, g: 1, b: 1, a: 0.7372549}

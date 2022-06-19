@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/GameDevHQ/FileBase/Projects/Tutorials/Starter_Files/VR_Intensive/3D/VR_Space_Cockpit/Scenes/VR_Cockpit.unity
+    guid: 3507212b5118c194fbe40f439f5bcca4
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0034f21c395fcb94e8685945ef6d8f16, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d8cca4d1f2790e84a82bac3f5bb27df5, type: 2}

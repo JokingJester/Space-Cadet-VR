@@ -38,7 +38,7 @@ public class SequenceManager : MonoBehaviour
             }
             else
             {
-                Debug.Log("END");
+                //Debug.Log("END");
             }
         }
         else
