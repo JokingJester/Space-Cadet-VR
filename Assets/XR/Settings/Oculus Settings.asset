@@ -16,7 +16,7 @@ MonoBehaviour:
   m_StereoRenderingModeAndroid: 2
   SharedDepthBuffer: 1
   DashSupport: 1
-  LowOverheadMode: 0
+  LowOverheadMode: 1
   OptimizeBufferDiscards: 1
   PhaseSync: 0
   SymmetricProjection: 1
@@ -26,4 +26,4 @@ MonoBehaviour:
   SpaceWarp: 0
   TargetQuest: 1
   TargetQuest2: 1
-  SystemSplashScreen: {fileID: 0}
+  SystemSplashScreen: {fileID: 2800000, guid: 9de64c2ee879ce64596952fced28c9c8, type: 3}
